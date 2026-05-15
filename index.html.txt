@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English | Арзамас</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#fefcf7}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+.btn{background:#2b5f8a;color:#fff;padding:12px 28px;border-radius:40px;text-decoration:none;display:inline-block}
+.section-title{font-size:2rem;text-align:center;margin:40px 0 20px}
+.grid{display:grid;gap:25px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:#fff;padding:25px;border-radius:28px;box-shadow:0 5px 15px rgba(0,0,0,0.05)}
+.contact{background:#f0f3ee;padding:40px;border-radius:40px;margin:40px 0}
+input,textarea{width:100%;padding:12px;margin:8px 0;border-radius:30px;border:1px solid #ddd}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 style="font-size:2.5rem">🇬🇧 Английский 
+в Арзамасе</h1>
+  <p style="font-size:1.2rem;margin:20px 0">Курсы для детей и взрослых. Очно / онлайн</p>
+  <a href="#form" class="btn">Записаться на пробный урок →</a>
+
+  <div class="section-title">Наши курсы</div>
+  <div class="grid">
+    <div class="card"><h3>📚 Kids (7-12 лет)</h3><p>Игровой английский</p><b>от 3900₽/мес</b></div>
+    <div class="card"><h3>🎓 ОГЭ/ЕГЭ</h3><p>Интенсивная подготовка</p><b>от 5600₽/мес</b></div>
+    <div class="card"><h3>💼 Business English</h3><p>Для работы и карьеры</p><b>от 6200₽/мес</b></div>
+    <div class="card"><h3>🗣️ Разговорный клуб</h3><p>Преодолеем барьер</p><b>2500₽/4 встречи</b></div>
+  </div>
+
+  <div class="section-title">Отзывы</div>
+  <div class="grid">
+    <div class="card">⭐ "Сын заговорил! Спасибо преподавателям" — Светлана</div>
+    <div class="card">⭐ "После курса меня повысили на работе" — Екатерина</div>
+  </div>
+
+  <div class="contact" id="form">
+    <h2>📍 Приходите</h2>
+    <p><strong>г. Арзамас, ул. Калинина, 12</strong>
+📞 +7 (83147) 5-88-22
+📱 WhatsApp: +7 920 123-45-67</p>
+    <h3 style="margin:25px 0 15px">Пробный урок бесплатно</h3>
+    <form id="formId">
+      <input type="text" placeholder="Ваше имя" required id="name">
+      <input type="tel" placeholder="Телефон" required id="phone">
+      <textarea rows="2" placeholder="Уровень английского"></textarea>
+      <button class="btn" style="border:none;cursor:pointer">Отправить →</button>
+    </form>
+  </div>
+  <p style="text-align:center;margin:30px 0">© EnglishHouse Арзамас</p>
+</div>
+<script>
+document.getElementById('formId')?.addEventListener('submit',function(e){
+  e.preventDefault();
+  if(document.getElementById('name').value && document.getElementById('phone').value)
+    alert('✅ Спасибо! Менеджер свяжется с вами из Арзамаса');
+  else alert('Заполните имя и телефон');
+});
+</script>
+</body>
+</html>
+
+
+
+
